@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Bài kiểm tra chương 2</h1>
+        <br>
+        <div>
+            <h3 style="font-weight: normal;"><b>môn học: </b> <i>ứng dụng web</i></h3>        
+            <h3 style="font-weight: normal;"><b>mssv: </b> <i>2551010163</i></h3>        
+            <h3 style="font-weight: normal;"><b>họ tên: </b> <i>Dương Huỳnh Trọng Nhân</i></h3>
+        </div>
+        <hr color="blue">
+        <p><a href="bt08.html">Trang chủ</a> <a href="bt08-content.html">Nội dung môn học</a> <a href="bt08-register.html">Đăng ký</a></p>
+    </div>
+    <div align="center" >
+    <h1 style="font-weight: bold;">Đăng ký tham gia diễn đàn</h1>
+    <table border="2px" style="background-color: yellow;">
+        <tr>
+            <td>Tên đăng nhập: </td>
+            <td><form> 
+                <input type="text" id="name" name="name" placeholder="Nhập tên đăng nhập..">
+            </form></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu:</td>
+            <td>
+                <form>
+                    <input type="password">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Giới tính:</td>
+            <td>
+                <form>
+                    <input type="checkbox">
+                    <label>Nam</label>
+                    <input type="checkbox">
+                    <label>Nữ</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ngày sinh:</td>
+            <td>
+                <form>
+                    <input type="date">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <form>
+                    <input type="email">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ngôn ngữ lập trình yêu thích</td>
+            <td>
+                <form>
+                    <select name="lang">
+                        <option value="c++">c++</option>
+                        <option>html</option>
+                        <option>css</option>
+                        <option>js</option>
+                        <option>python</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Quy định khi tham gia diễn đàn</td>
+            <td>
+                <form>
+                    <textarea rows="4" cols="20">Bài viết phải nghiêm túc, không chứa quảng cáo, không có nội dung phản cảm.</textarea>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button type="submit" width="150" height="75" style="background-color: rgb(0, 204, 255);padding: 8px 25px;border-radius: 8px;">Đăng ký</button>
+                <button type="reset" style="background-color: rgb(0, 225, 255);padding: 8px 25px;border-radius:8px ;">Hủy</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
