@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai css2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+        table{
+            box-shadow: 0 2px 10px;
+        }
+        table,th,td{
+            border: 2px solid rgb(242, 236, 236);
+            border-collapse: collapse;
+            padding: 10px;
+            width: 80%;
+            margin:0 auto;
+            table-layout: fixed;
+
+        }
+        th{
+            height: 40px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            text-transform: uppercase;
+        }
+        td{
+            height: 25px;
+            text-align: left;
+            &td::first-letter{text-transform: capitalize;}
+        }
+        table tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        table tr:nth-child(even){
+            background-color: rgb(243, 239, 239);
+        }
+        form {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 35px;
+            margin: 20px auto;
+            align-items: center;
+            max-width: 555px;
+            box-shadow: 0 4px 10px;
+            box-sizing: border-box;
+            & h2{
+                text-transform: capitalize;
+                text-align: center;
+                margin:20px 0 40px 0;
+            }
+        }
+        form input, form select, form textarea, form button{
+            border:1px solid black;
+            height:40px;
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+         form button {
+            height: 45px; text-align: center ;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 6px;
+            background: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+            cursor: pointer;
+            margin-top: 25px;
+            color: white;
+        }
+        form label{
+            font-size: medium;
+            text-align: left;
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        form select option{
+            font-weight:550;
+        }
+        form textarea {
+        height: 150px;      
+        padding: 12px;       
+        resize: vertical;    
+}
+
+    </style>
+</head>
+<body>
+    <h1>các sự kiện trong tháng 12/2025</h1>
+    <table>
+        <tr>
+            <th>Sự kiện</th>
+            <th>Địa điểm</th>
+            <th>Thời gian</th>
+        </tr>
+        <tr>
+            <td>Hội thi tay nghê điêu khắc</td>
+            <td>Tây Ninh</td>
+            <td>từ ngày 1-4 tháng 12/2025</td>
+        </tr>        
+        <tr>
+            <td>Triển lãm tranh sơn mài</td>
+            <td>Bình Dương</td>
+            <td>từ ngày 10-15 tháng 12/2025</td>
+        </tr>
+        <tr>
+            <td>Hội thi bánh dân gian Nam Bộ</td>
+            <td>Vĩnh Long</td>
+            <td>từ ngày 15-20 tháng 12/2025</td>
+        </tr>
+            <tr>
+            <td>Hội thi văn nghệ quần chúng</td>
+            <td>Sài Gòn</td>
+            <td>từ ngày 25-30 tháng 12/2025</td>
+        </tr>
+    </table>
+    <form> 
+        <h2>đăng ký tham gia sự kiện</h2>
+        <label >Họ và tên</label>
+        <input type="text" class="f1">
+        <label>Email</label>
+        <input type="email" class="f1">
+        <label>Số điện thoại</label>
+        <input type="tel" class="f1">
+        <label >Chọn sự kiện</label>
+        <select name="event" class="f1">
+            <option class="f1" selected disabled hidden>--Chọn sự kiện--</option>
+            <option class="f1">Hội thi tay nghê điêu khắc</option>
+            <option class="f1">Triển lãm tranh sơn mài</option>
+            <option class="f1">Hội thi bánh dân gian Nam Bộ</option>
+            <option class="f1">Hội thi văn nghệ quần chúng</option>
+        </select>
+        <label class="f1">Ghi chú thêm</label>
+        <textarea width="200px" class="f1"></textarea>
+        <button class="f1">Đăng ký ngay</button>
+
+    </form>
+</body>
+</html>

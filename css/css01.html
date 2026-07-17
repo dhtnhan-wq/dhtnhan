@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='vi'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Bai css1</title>
+    <style>
+    h1{
+        text-shadow: 2px 2px 5px rgb(5, 0, 8);
+    }
+    p{
+        &:first-child::first-letter{text-transform: uppercase;}
+        &:nth-child(2){text-transform: capitalize;text-align: center;}
+        &:nth-child(3){text-transform: uppercase;text-align: right;}
+        &:nth-child(4){text-transform: lowercase;text-align: left;}
+        &:last-child::first-letter{font-size: large;}
+        &:last-child::first-line{font-weight: bold}
+
+    }
+</style>
+</head>
+
+<body>
+<h1>Dòng này đc định dạng có bóng (shadow)</h1>
+<div>
+<p>văn bản bình thường</p>
+<p>hoa các ký tự đầu từ</p>
+<p>hoa tất cả ký tự</p>
+<p>đoạn này chuyển về chữ thường</p>
+<p>Đoạn này ký tự đầu.............................. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi ab sapiente asperiores, laborum iure quibusdam impedit nobis commodi quam dignissimos nam! Repudiandae molestiae officia animi autem quam doloribus temporibus.</p>
+
+</div>
+</body>
+</html>
