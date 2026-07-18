@@ -1,0 +1,88 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border: 2px solid darkcyan;
+    margin: 30px auto;
+    padding: 8px;
+}
+
+.banner {
+    display: flex;
+    background-color: pink;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    animation: bannerColor 1s infinite alternate;
+    
+}
+.banner p{
+    animation: bannerText 2s infinite;
+}
+@keyframes bannerColor{
+    0%{
+        background: red;
+    }
+    50%{
+        background:lawngreen;
+    }
+    100%{
+        background: blue;
+    }
+}
+
+.main {
+    justify-content: space-around;
+    padding: 30px;
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+.hinhvuong1, .hinhvuong2,.hinhvuong3,.hinhvuong4{
+    background-size: cover;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color:yellow;
+}
+.hinhvuong1 {
+    background-image: url(https://phukiennillkin.com/anh-anime-trang-den/);
+    border: 3px solid rgb(182, 0, 0);
+
+}
+
+.hinhvuong2 {
+    background-color: lightcyan;
+    border-radius: 0px 30px;
+    border: 3px dashed rgb(182, 0, 0);
+}
+
+.hinhvuong3 {
+    background-color: lightcyan;
+    border-radius: 30px 0px;
+
+    border: 3px dotted rgb(182, 0, 0);
+
+}
+
+.hinhvuong4 {
+    background-color: lightcyan;
+    border: 3px solid rgb(251, 255, 0);
+}
+@keyframes bannerText{
+    0%{transform: scale(0.5)};
+    100%{
+        transform: scale(2);
+    }
+}
